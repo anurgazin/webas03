@@ -33,6 +33,7 @@ function Restaurants(props) {
   }
   useEffect(() => {
     loadDate();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [page, props.query]);
   if (loading) {
     return (
